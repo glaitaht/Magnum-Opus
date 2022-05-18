@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="Magnum_Opus" customModuleProvider="target">
+            <connections>
+                <outlet property="carouselView" destination="Owe-TF-Cf9" id="ohU-zo-LbZ"/>
+                <outlet property="moviesCollectionView" destination="Npp-Bx-fbc" id="beu-wf-xk1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Owe-TF-Cf9">
+                    <rect key="frame" x="10" y="47" width="394" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="5Ld-hi-ZDY"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="u8e-xy-2DX" customClass="AlignedCollectionViewFlowLayout" customModule="AlignedCollectionViewFlowLayout">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="slider"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Npp-Bx-fbc">
+                    <rect key="frame" x="0.0" y="357" width="414" height="539"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="6we-s9-OSR">
+                        <size key="itemSize" width="175" height="260"/>
+                        <size key="estimatedItemSize" width="175" height="260"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="movieCVOfHomePage"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.035294117647058823" green="0.0078431372549019607" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Owe-TF-Cf9" secondAttribute="trailing" constant="10" id="8gP-ay-OP6"/>
+                <constraint firstItem="Npp-Bx-fbc" firstAttribute="top" secondItem="Owe-TF-Cf9" secondAttribute="bottom" constant="10" id="BRv-DU-ciC"/>
+                <constraint firstItem="Owe-TF-Cf9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="3" id="JIu-nV-22O"/>
+                <constraint firstItem="Owe-TF-Cf9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Jv4-Re-YSi"/>
+                <constraint firstAttribute="bottom" secondItem="Npp-Bx-fbc" secondAttribute="bottom" id="Lnk-DB-oqe"/>
+                <constraint firstItem="Npp-Bx-fbc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W5X-Lb-nBj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Npp-Bx-fbc" secondAttribute="trailing" id="gkl-ZZ-ZOT"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

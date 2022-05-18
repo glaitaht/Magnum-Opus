@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PaginationCell" customModule="Magnum_Opus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqi-RL-7y2">
+                        <rect key="frame" x="20" y="32.5" width="140" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Wih-UQ-nQe"/>
+                            <constraint firstAttribute="width" constant="140" id="ema-Mo-cn1"/>
+                        </constraints>
+                        <color key="tintColor" red="0.70588235290000001" green="0.1529411765" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Previous Page">
+                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9a-SV-JHV">
+                        <rect key="frame" x="240" y="32.5" width="140" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="S0R-uA-DP2"/>
+                            <constraint firstAttribute="width" constant="140" id="yIX-u7-Tff"/>
+                        </constraints>
+                        <color key="tintColor" red="0.70588235290000001" green="0.1529411765" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Next Page">
+                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIA-hx-Rve">
+                        <rect key="frame" x="184" y="20.5" width="32" height="19"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Vi-ZWy">
+                        <rect key="frame" x="194" y="38.5" width="12" height="23"/>
+                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="SIA-hx-Rve" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Gh1-1y-RkF"/>
+                <constraint firstItem="cqi-RL-7y2" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="JWw-Fi-T9T"/>
+                <constraint firstItem="cqi-RL-7y2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="MPQ-ac-5Kv"/>
+                <constraint firstItem="5nN-Vi-ZWy" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Wsl-Qg-bgp"/>
+                <constraint firstItem="SIA-hx-Rve" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-20" id="jfZ-ze-pOj"/>
+                <constraint firstAttribute="trailing" secondItem="B9a-SV-JHV" secondAttribute="trailing" constant="20" id="ugY-GB-t50"/>
+                <constraint firstItem="5nN-Vi-ZWy" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xMj-m1-hga"/>
+                <constraint firstItem="B9a-SV-JHV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xsK-mU-2BN"/>
+            </constraints>
+            <size key="customSize" width="423" height="149"/>
+            <connections>
+                <outlet property="nextPageButton" destination="B9a-SV-JHV" id="y3o-9m-Cqw"/>
+                <outlet property="pageLabel" destination="SIA-hx-Rve" id="ctE-wb-vqs"/>
+                <outlet property="pageNumber" destination="5nN-Vi-ZWy" id="E9Y-jB-ocF"/>
+                <outlet property="previousPageButton" destination="cqi-RL-7y2" id="9U8-2E-ddv"/>
+            </connections>
+            <point key="canvasLocation" x="221.01449275362322" y="151.67410714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

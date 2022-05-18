@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="gTV-IL-0wX" customClass="MovieCell" customModule="Magnum_Opus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="315"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="315"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbA-s3-TTM">
+                        <rect key="frame" x="10" y="247" width="155" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-dH-lqM">
+                        <rect key="frame" x="10" y="3" width="155" height="237.5"/>
+                        <color key="tintColor" red="0.78823529411764703" green="0.17254901960784313" blue="0.96078431372549022" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="3Mm-9Z-JiK"/>
+                            <constraint firstAttribute="width" constant="155" id="JuD-JC-QiL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgj-Fn-8kO">
+                        <rect key="frame" x="10" y="269.5" width="155" height="12"/>
+                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="13"/>
+                        <color key="textColor" systemColor="systemGray4Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mgj-Fn-8kO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="1pp-cT-aAX"/>
+                <constraint firstAttribute="trailing" secondItem="XbA-s3-TTM" secondAttribute="trailing" constant="10" id="2IM-1W-sq9"/>
+                <constraint firstItem="xfQ-dH-lqM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="AOn-ps-McL"/>
+                <constraint firstItem="mgj-Fn-8kO" firstAttribute="top" secondItem="XbA-s3-TTM" secondAttribute="bottom" constant="3" id="CUa-3L-oQd"/>
+                <constraint firstAttribute="trailing" secondItem="mgj-Fn-8kO" secondAttribute="trailing" constant="10" id="IjN-ED-dV9"/>
+                <constraint firstAttribute="trailing" secondItem="xfQ-dH-lqM" secondAttribute="trailing" constant="10" id="XBh-Dg-G7H"/>
+                <constraint firstItem="xfQ-dH-lqM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="YTm-tk-ezy"/>
+                <constraint firstItem="XbA-s3-TTM" firstAttribute="top" secondItem="xfQ-dH-lqM" secondAttribute="bottom" constant="5" id="fz7-AE-cAJ"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mgj-Fn-8kO" secondAttribute="bottom" constant="3" id="kbv-LB-ueP"/>
+                <constraint firstItem="XbA-s3-TTM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="r2n-cK-QJo"/>
+            </constraints>
+            <size key="customSize" width="175" height="278"/>
+            <connections>
+                <outlet property="detailLabel" destination="mgj-Fn-8kO" id="j0Z-hg-NLZ"/>
+                <outlet property="movieImage" destination="xfQ-dH-lqM" id="kCQ-MW-6SI"/>
+                <outlet property="titleLabel" destination="XbA-s3-TTM" id="f9E-9Q-HaP"/>
+            </connections>
+            <point key="canvasLocation" x="221.01449275362322" y="193.86160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
